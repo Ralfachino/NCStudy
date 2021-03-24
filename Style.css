@@ -1,0 +1,31 @@
+.container {
+
+    padding: 15px;
+    max-width: 700px;
+    min-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.element-center {
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #4169E1;
+    font-family: 'PT Mono', monospace;
+    display: flex;
+    align-items: center;
+}
+.gg-file-document {
+    margin-right: 7px;
+  }
+
+
+
+
