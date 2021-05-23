@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class MyLinkedList <E> implements ILinkedList<E> {
@@ -124,14 +125,19 @@ while (deleteCount != null) {
     }
 
     @Override
-    public Object[] toArray() {
-        Object[] result = new Object[size];
-    int i = 0;
-    for (Node<E> x = first; x != null; x = x.next) {
-        result[i] = x.item;
-        i++;
-    }
-    return result;
+    public E[] toArray() {
+        E[] newArray ;
+        E tmp = this.get(0);
+        if (tmp == null) return (E[]) Array.newInstance(Object.class, 0);
+        int index = 0;
+        newArray = (E[]) Array.newInstance(tmp.getClass(), size);
+
+        for (Node<E> x = first; x != null; x = x.next) {
+            newArray[index] = x.item;
+            index++;
+        }
+
+        return newArray;
     }
 
     @Override
