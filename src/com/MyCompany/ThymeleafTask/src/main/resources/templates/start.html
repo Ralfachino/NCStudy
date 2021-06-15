@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Getting Started: Handling Form Submission</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Data of User</h1>
+<form action="#" th:action="@{/start}" th:object="${user}" method="post">
+
+  <p>First Name: <input type="text" th:field="*{firstName}" required pattern="[а-яА-ЯёЁa-zA-Z]+"/></p>
+  <p>Last Name: <input type="text" th:field="*{lastName}" required pattern="[а-яА-ЯёЁa-zA-Z]+"/></p>
+  <p>Middle Name: <input type="text" th:field="*{middleName}" required pattern="[а-яА-ЯёЁa-zA-Z]+"/></p>
+  <p>Age: <input type="text" th:field="*{age}" required pattern="\d+"/></p>
+  <p>Salary: <input type="text" th:field="*{salary}" required pattern="\d+"/></p>
+  <p>Email: <input type="text" th:field="*{email}" required pattern="\S+@[a-z]+.[a-z]+"/></p>
+  <p>Job: <input type="text" th:field="*{job}" /></p>
+
+  <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+
+
+
+</form>
+<form action="#" th:action="@{/search}" method="post">
+  <p><input type="submit" value="Search User"/>
+</form>
+
+</form>
+<form action="#" th:action="@{/upload}" method="post" enctype="multipart/form-data">
+  <p><input type="file" name="file"/>
+  <p><button type="submit" name="file">Read file</button>
+</form>
+</body>
+</html>
+

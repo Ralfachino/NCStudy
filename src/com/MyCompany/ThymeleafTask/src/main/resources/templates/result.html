@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'First Name:  ' + ${user.firstName}" />
+<p th:text="'Last Name:  ' + ${user.lastName}" />
+<p th:text="'Middle Name:  ' + ${user.middleName}" />
+<p th:text="'Age:  ' + ${user.age}" />
+<p th:text="'Salary:  ' + ${user.salary}" />
+<p th:text="'Email:  ' + ${user.email}" />
+<p th:text="'Job:  ' + ${user.job}" />
+<a href="/start">Submit another message</a>
+<t></t>
+
+<!--<form action="#" th:action="@{/read-cookie}" method="get">
+    <p><input type="submit" value="Get Cookies" /></p>
+    <a href="/start">Submit another message</a>
+</form>-->
+
+</body>
+</html>

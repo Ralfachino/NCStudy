@@ -1,0 +1,2 @@
+[Дмитрий, Нагинайло, Александрович, 23, 200000, DmiriiNag@yandex.ru, Programmer]
+[Михаил, Фридман, Маратович, 57, 2000000000, MihaFrid@yandex.ru, Businessman]
